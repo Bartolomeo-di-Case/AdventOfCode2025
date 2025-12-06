@@ -4,8 +4,7 @@ public class Program
 {
     public static void Main(string[] args)
     {
-
-        PrintingDepartment pd = new PrintingDepartment();
-        Console.WriteLine(pd.GetResultPartTwo());
+        Cafetaria cafetaria = new Cafetaria();
+        Console.WriteLine(cafetaria.GetResultPartTwo());
     }
 }
