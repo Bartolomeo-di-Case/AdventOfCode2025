@@ -4,7 +4,8 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        SecretEntrance secretEntrance = new SecretEntrance();
-        Console.WriteLine(secretEntrance.GetResultPartTwo());
+
+        GiftShop giftShop = new GiftShop();
+        Console.WriteLine(giftShop.GetResultPartTwo());
     }
 }
