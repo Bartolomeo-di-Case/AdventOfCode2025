@@ -5,7 +5,7 @@ public class Program
     public static void Main(string[] args)
     {
 
-        GiftShop giftShop = new GiftShop();
-        Console.WriteLine(giftShop.GetResultPartTwo());
+        Lobby lobby = new Lobby();
+        Console.WriteLine(lobby.GetResult(12));
     }
 }

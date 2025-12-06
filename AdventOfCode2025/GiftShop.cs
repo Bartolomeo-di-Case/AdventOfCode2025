@@ -2,7 +2,7 @@
 
 public class GiftShop
 {
-    private long result = 0;
+    private long m_result = 0;
 
     private const string ExampleInput =
         "11-22,95-115,998-1012,1188511880-1188511890,222220-222224,1698522-1698528,446443-446449,38593856-38593862,565653-565659,824824821-824824827,2121212118-2121212124";
@@ -12,7 +12,7 @@ public class GiftShop
 
     public long GetResultPartOne()
     {
-        string[] parts = MyInput.Split(',');
+        string[] parts = ExampleInput.Split(',');
 
         foreach (string part in parts)
         {
@@ -29,11 +29,11 @@ public class GiftShop
                 
                 int midIndex = iAsAsString.Length / 2;
 
-                if (iAsAsString[..midIndex] == iAsAsString[midIndex..]) result += i;
+                if (iAsAsString[..midIndex] == iAsAsString[midIndex..]) m_result += i;
             }
         }
         
-        return result;
+        return m_result;
     }
     
     public long GetResultPartTwo()
@@ -50,11 +50,11 @@ public class GiftShop
             {
                 string iAsAsString = i.ToString();
 
-                if (HasInvalidId(iAsAsString)) result += i;
+                if (HasInvalidId(iAsAsString)) m_result += i;
             }
         }
         
-        return result;
+        return m_result;
     }
 
     public static bool HasInvalidId(string input)
