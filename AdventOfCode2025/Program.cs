@@ -4,7 +4,7 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        TrashCompactor trashCompactor = new TrashCompactor();
-        Console.WriteLine(trashCompactor.GetResultPartTwo());
+       Laboratories laboratories = new Laboratories();
+        Console.WriteLine(laboratories.GetResultPartTwo());
     }
 }
