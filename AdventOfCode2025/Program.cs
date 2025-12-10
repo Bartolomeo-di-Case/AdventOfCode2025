@@ -4,7 +4,7 @@ public class Program
 {
     public static void Main(string[] args)
     {
-       Playground playground = new Playground(); 
-       Console.WriteLine(playground.GetResultPartTwo());
+       MovieTheater mt = new MovieTheater();
+       Console.WriteLine(mt.GetResultPartTwo());
     }
 }
